@@ -4,22 +4,25 @@ import { ExternalLink, Github, Calendar, Users, TrendingUp } from 'lucide-react'
 const Projects = () => {
   const projects = [
     {
-      title: "Code Master",
-      period: "March 2024 - April 2024",
-      description: "A scalable learning platform built for 1,000+ users with AI-powered chatbot for coding error correction and real-time code execution.",
+      title: "Study Buddy",
+      period: "March 2024 - June 2024",
+      description: "An AI-powered full-stack platform designed for aspiring developers to master coding, prepare for interviews, and build optimized resumes with personalized career roadmaps and job tracking.",
       highlights: [
-        "Built for 1,000+ users in 3 months",
-        "20% reduction in development time",
-        "25% reduction in debugging time",
-        "10+ programming languages supported"
+        "Architected a modular system integrating Streamlit frontend with FastAPI/Flask backend",
+        "Enabled real-time code execution and AI-driven chat interactions",
+        "Implemented ATS detection and LinkedIn scraping for profile optimization",
+        "Built dynamic, personalized roadmaps and profile builders",
+        "Aggregated job listings, hackathons, and learning resources into one dashboard"
       ],
-      technologies: ["HTML", "CSS", "JavaScript", "EJS", "Python"],
+      technologies: ["Streamlit", "FastAPI", "Flask", "Python", "JavaScript", "CodeMirror", "RAG-based NLP Models"],
       metrics: {
-        users: "1000+",
-        languages: "10+",
-        timeReduction: "25%"
+        users: "5000+",
+        features: "15+",
+        interviewReadinessImprovement: "30%"
       },
-      image: "https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=800"
+      image: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800",
+      liveDemo: "https://college--buddy34.streamlit.app/",
+      codeLink: "https://github.com/sushilverma1125/studybuddy/"
     },
     {
       title: "TechXpert",
@@ -37,7 +40,9 @@ const Projects = () => {
         performance: "30%",
         duration: "24hrs"
       },
-      image: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800"
+      image: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800",
+      liveDemo: "https://techxpert.onrender.com/",
+      codeLink: "https://github.com/sushilverma1125/TechXpert/"
     }
   ];
 
@@ -73,14 +78,24 @@ const Projects = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="absolute bottom-4 left-4 right-4 flex space-x-3">
-                      <button className="flex items-center space-x-2 bg-white/90 text-gray-900 px-4 py-2 rounded-lg hover:bg-white transition-colors">
+                      <a
+                        href={project.liveDemo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center space-x-2 bg-white/90 text-gray-900 px-4 py-2 rounded-lg hover:bg-white transition-colors"
+                      >
                         <ExternalLink size={16} />
                         <span className="font-medium">Live Demo</span>
-                      </button>
-                      <button className="flex items-center space-x-2 bg-gray-900/90 text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition-colors">
+                      </a>
+                      <a
+                        href={project.codeLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center space-x-2 bg-gray-900/90 text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition-colors"
+                      >
                         <Github size={16} />
                         <span className="font-medium">Code</span>
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
