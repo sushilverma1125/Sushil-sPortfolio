@@ -58,10 +58,15 @@ const Hero = () => {
               <span>Get in Touch</span>
             </button>
 
-            <button className="group border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 flex items-center space-x-2">
+            <a
+              href="https://drive.google.com/uc?export=download&id=1WEqwfDsY2HLTgnULNOE83I3bHp4OtSb9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 flex items-center space-x-2"
+            >
               <Download size={20} />
               <span>Download Resume</span>
-            </button>
+            </a>
           </div>
 
           <div className="flex justify-center space-x-6 mb-12">
