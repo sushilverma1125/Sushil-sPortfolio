@@ -21,8 +21,8 @@ const Hero = () => {
       <div className="max-w-4xl mx-auto text-center">
         <div className="animate-fade-in-up">
           <div className="mb-8">
-            <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 flex items-center justify-center shadow-xl">
-              <span className="text-white font-bold text-4xl">SV</span>
+            <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 flex items-center justify-center shadow-xl overflow-hidden">
+              <img src="photo.jpeg" alt="Your Photo" class="w-full h-full object-cover">
             </div>
           </div>
           
