@@ -208,7 +208,7 @@ const Contact = () => {
         {/* Footer */}
         <div className="mt-16 pt-8 border-t border-gray-200 dark:border-gray-700 text-center">
           <p className="text-gray-600 dark:text-gray-400">
-            © 2024 Sushil Kumar Verma. Designed and developed with ❤️ for creating amazing user experiences.
+            © 2025 Sushil Kumar Verma. Designed and developed with ❤️ for creating amazing user experiences.
           </p>
         </div>
       </div>

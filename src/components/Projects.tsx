@@ -34,7 +34,7 @@ const Projects = () => {
         "Real-time chat and screen sharing",
         "200+ participants supported"
       ],
-      technologies: ["HTML", "CSS", "Node.js", "MongoDB"],
+      technologies: ["HTML", "CSS", "Node.js", "GeminiAPI", "MongoDB"],
       metrics: {
         participants: "200+",
         performance: "30%",
