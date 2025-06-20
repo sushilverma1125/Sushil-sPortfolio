@@ -20,7 +20,7 @@ const Projects = () => {
         features: "15+",
         interviewReadinessImprovement: "30%"
       },
-      image: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=800",
       liveDemo: "https://college--buddy34.streamlit.app/",
       codeLink: "https://github.com/sushilverma1125/studybuddy/"
     },
