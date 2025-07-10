@@ -42,7 +42,7 @@ const About = () => {
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white">My Journey</h3>
               </div>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-                Recently completed a UI/UX Design trial internship at Busibud, where I successfully revamped live chat software UI, 
+                Recently completed a UI/UX Design internship at Busibud, where I successfully revamped live chat software UI, 
                 leading to a 15% increase in user engagement. My approach combines technical expertise with creative design thinking.
               </p>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">

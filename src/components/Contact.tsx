@@ -120,8 +120,7 @@ const Contact = () => {
                 <span className="font-semibold text-green-800 dark:text-green-300">Available for Internship</span>
               </div>
               <p className="text-green-700 dark:text-green-400 text-sm">
-                Currently seeking UI/UX Design internship opportunities. 
-                Ready to start immediately and contribute to innovative projects.
+                Seeking Software Development internships. Ready to start immediately and contribute to building efficient, innovative applications.
               </p>
             </div>
           </div>

@@ -4,8 +4,8 @@ import { Building2, Calendar, TrendingUp, Users, Zap } from 'lucide-react';
 const Experience = () => {
   const experience = {
     company: "Busibud",
-    position: "UI/UX Design Intern (Trial)",
-    period: "November 2024 (1 week)",
+    position: "UI/UX Design Intern",
+    period: "November 2024 - December 2024",
     location: "Remote",
     description: "Completed a one-week trial internship where I revamped Chauffeur's live chat software UI, improving usability and visual appeal, leading to a 15% increase in user engagement.",
     achievements: [

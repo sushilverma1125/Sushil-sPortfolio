@@ -156,7 +156,7 @@ const Achievements = () => {
             <div className="space-y-6">
               <div className="p-4 bg-green-50 dark:bg-green-900/30 rounded-xl border border-green-200 dark:border-green-700">
                 <h4 className="font-semibold text-green-800 dark:text-green-300 mb-2">Current Academic Standing</h4>
-                <p className="text-green-700 dark:text-green-400 text-sm">CGPA: 7.76/10.0 - Consistently maintaining high academic performance</p>
+                <p className="text-green-700 dark:text-green-400 text-sm">CGPA: 7.92/10.0 - Consistently maintaining high academic performance</p>
               </div>
               <div className="p-4 bg-blue-50 dark:bg-blue-900/30 rounded-xl border border-blue-200 dark:border-blue-700">
                 <h4 className="font-semibold text-blue-800 dark:text-blue-300 mb-2">University Recognition</h4>
@@ -180,17 +180,12 @@ const Achievements = () => {
               With a proven track record of excellence in competitions, academics, and real-world projects, 
               I'm excited to bring this same level of dedication and innovation to your organization.
             </p>
-            <button 
-              onClick={() => {
-                const contactSection = document.getElementById('contact');
-                if (contactSection) {
-                  contactSection.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
-              className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200"
-            >
-              Let's Connect
-            </button>
+            <button
+                onClick={() => window.open('https://www.linkedin.com/in/sushilverma1125/', '_blank')}
+                className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200"
+              >
+                Let's Connect
+              </button>
           </div>
         </div>
       </div>

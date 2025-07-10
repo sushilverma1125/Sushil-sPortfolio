@@ -51,15 +51,14 @@ const Hero = () => {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <button
-              onClick={scrollToContact}
-              className="group bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200 flex items-center space-x-2"
-            >
-              <Mail size={20} />
-              <span>Get in Touch</span>
-            </button>
-
+            onClick={() => window.location.href = 'mailto:sushilverma1125@gmail.com'}
+            className="group bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200 flex items-center space-x-2"
+          >
+            <Mail size={20} />
+            <span>Get in Touch</span>
+          </button>
             <a
-              href="https://drive.google.com/file/d/1ItzPSgT_slxfjLCikzxtTX4FDV_lFHoS/view?usp=sharing"
+              href="https://drive.google.com/file/d/1_g2ylNi0-R0kXiro21UkH4bl8xZTHmud/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="group border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 flex items-center space-x-2"
