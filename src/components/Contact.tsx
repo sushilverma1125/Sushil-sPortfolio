@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Linkedin, Github, Send, MessageCircle } from 'lucide-react';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+  const [sent, setSent] = useState(false);
+
   const contactInfo = [
     {
       icon: Mail,
@@ -41,6 +44,27 @@ const Contact = () => {
     }
   ];
 
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      'service_a02jmr9',      // Replace with your EmailJS service ID
+      'template_3wxtkk2',     // Replace with your EmailJS template ID
+      e.currentTarget,
+      'pV1G6qf30Q9eVA0J0'          // Replace with your EmailJS user/public ID
+    )
+      .then((result) => {
+        console.log('Email sent:', result.text);
+        setSent(true);
+        e.currentTarget.reset();
+        // Hide confirmation message after 5 seconds (optional)
+        setTimeout(() => setSent(false), 5000);
+      }, (error) => {
+        console.error('Email sending error:', error.text);
+        alert('Oops! Something went wrong. Please try again later.');
+      });
+  };
+
   return (
     <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
@@ -50,8 +74,7 @@ const Contact = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-500 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            I'm actively seeking UI/UX design internship opportunities where I can contribute my skills, 
-            learn from experienced professionals, and help create exceptional user experiences.
+            I'm actively seeking Software Development internship opportunities. Ready to start immediately and contribute to building efficient, innovative applications.
           </p>
         </div>
 
@@ -131,7 +154,7 @@ const Contact = () => {
               Send me a message
             </h3>
             
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={sendEmail}>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
@@ -140,8 +163,10 @@ const Contact = () => {
                   <input
                     type="text"
                     id="firstName"
+                    name="firstName"
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                     placeholder="Your first name"
+                    required
                   />
                 </div>
                 <div>
@@ -151,8 +176,10 @@ const Contact = () => {
                   <input
                     type="text"
                     id="lastName"
+                    name="lastName"
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                     placeholder="Your last name"
+                    required
                   />
                 </div>
               </div>
@@ -164,8 +191,10 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                   placeholder="your.email@example.com"
+                  required
                 />
               </div>
 
@@ -176,8 +205,10 @@ const Contact = () => {
                 <input
                   type="text"
                   id="subject"
+                  name="subject"
                   className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                   placeholder="What is this about?"
+                  required
                 />
               </div>
 
@@ -187,9 +218,11 @@ const Contact = () => {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   rows={6}
                   className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none"
                   placeholder="Tell me about the opportunity or how I can help..."
+                  required
                 ></textarea>
               </div>
 
@@ -201,6 +234,13 @@ const Contact = () => {
                 <span>Send Message</span>
               </button>
             </form>
+
+            {/* Confirmation message */}
+            {sent && (
+              <p className="mt-4 text-green-600 dark:text-green-400 font-semibold">
+                Thank you! Your message has been sent successfully.
+              </p>
+            )}
           </div>
         </div>
 
