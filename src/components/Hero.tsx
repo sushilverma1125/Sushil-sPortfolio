@@ -1,5 +1,4 @@
-import React from 'react';
-import { ArrowDown, Github, Linkedin, Mail, Download } from 'lucide-react';
+import { ArrowDown, Linkedin, Mail, Download } from 'lucide-react';
 import photo from '../assets/photo.jpeg'; // <-- import your image here
 
 const Hero = () => {
