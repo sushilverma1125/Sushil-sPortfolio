@@ -25,7 +25,7 @@ const Hero = () => {
       <div className="max-w-4xl mx-auto text-center">
         <div className="animate-fade-in-up">
           <div className="mb-8">
-            <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 flex items-center justify-center shadow-xl overflow-hidden">
+            <div className="w-48 h-48 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 flex items-center justify-center shadow-xl overflow-hidden">
               <img
                 src={photo} // Use the imported photo here
                 alt="Your Photo"
