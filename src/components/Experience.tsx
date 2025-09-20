@@ -32,7 +32,7 @@ const Experience = () => {
       "Design Systems",
       "Cross-functional Collaboration"
     ],
-    tools: ["Figma", "Adobe XD", "Zulip"]
+    tools: ["Figma", "Zulip"]
   };
 
   const certificates = [
