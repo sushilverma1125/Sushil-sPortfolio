@@ -9,7 +9,7 @@ const Achievements = () => {
       description: "Recognized among the top 10% students at university for academic performance and extra-curricular activities",
       date: "February 2025",
       color: "from-yellow-500 to-orange-500",
-      category: "Academic"
+      category: ["Academic", "University Recognition"]
     },
     {
       icon: Medal,
@@ -17,7 +17,7 @@ const Achievements = () => {
       description: "Outperformed 150+ teams in a 24-hour hackathon organized by Coding Blocks",
       date: "March 2024",
       color: "from-purple-500 to-indigo-500",
-      category: "Hackathon"
+      category: ["Hackathon", "Competition"]
     },
     {
       icon: Award,
@@ -25,7 +25,7 @@ const Achievements = () => {
       description: "Secured top 3 position among numerous teams, demonstrating exceptional design and development skills",
       date: "April 2024",
       color: "from-blue-500 to-cyan-500",
-      category: "Competition", "Hackathon"
+      category: ["Competition", "Hackathon"]
     },
     {
       icon: Star,
@@ -33,7 +33,7 @@ const Achievements = () => {
       description: "Achieved 4th place among 1,000+ participants in national-level hackathon",
       date: "July 2024",
       color: "from-green-500 to-emerald-500",
-      category: "National Event", "Hackathon"
+      category: ["National Event", "Hackathon"]
     }
   ];
 
@@ -82,9 +82,11 @@ const Achievements = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center mb-2">
-                      <span className={`px-3 py-1 rounded-full text-xs font-medium bg-gradient-to-r ${achievement.color} text-white`}>
-                        {achievement.category}
-                      </span>
+                      {achievement.category.map((cat, i) => (
+                        <span key={i} className={`px-3 py-1 rounded-full text-xs font-medium bg-gradient-to-r ${achievement.color} text-white mr-2`}>
+                          {cat}
+                        </span>
+                      ))}
                       <span className="text-gray-500 dark:text-gray-400 text-sm ml-auto">{achievement.date}</span>
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
@@ -158,7 +160,7 @@ const Achievements = () => {
                 <h4 className="font-semibold text-green-800 dark:text-green-300 mb-2">Current Academic Standing</h4>
                 <p className="text-green-700 dark:text-green-400 text-sm">CGPA: 7.92/10.0 - Consistently maintaining high academic performance</p>
               </div>
-              <div className="p-4 bg-blue-50 dark:bg-blue-900/30 rounded-xl border border-blue-200 dark:border-blue-700">
+                            <div className="p-4 bg-blue-50 dark:bg-blue-900/30 rounded-xl border border-blue-200 dark:border-blue-700">
                 <h4 className="font-semibold text-blue-800 dark:text-blue-300 mb-2">University Recognition</h4>
                 <p className="text-blue-700 dark:text-blue-400 text-sm">Among Dean's top 10% students for academic and extra-curricular excellence</p>
               </div>
