@@ -25,7 +25,7 @@ const Achievements = () => {
       description: "Secured top 3 position among numerous teams, demonstrating exceptional design and development skills",
       date: "April 2024",
       color: "from-blue-500 to-cyan-500",
-      category: "Competition"
+      category: "Competition", "Hackathon"
     },
     {
       icon: Star,
@@ -33,7 +33,7 @@ const Achievements = () => {
       description: "Achieved 4th place among 1,000+ participants in national-level hackathon",
       date: "July 2024",
       color: "from-green-500 to-emerald-500",
-      category: "National Event"
+      category: "National Event", "Hackathon"
     }
   ];
 
