@@ -8,8 +8,7 @@ const Skills = () => {
       title: "Design Skills",
       color: "from-pink-500 to-rose-500",
       skills: [
-        { name: "Figma", level: 90 },
-        { name: "Adobe XD", level: 85 },
+        { name: "Figma", level: 95 },
         { name: "UI/UX Design", level: 88 },
         { name: "Wireframing", level: 85 },
         { name: "Prototyping", level: 87 },
