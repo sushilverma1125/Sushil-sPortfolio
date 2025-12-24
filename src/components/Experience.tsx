@@ -4,39 +4,6 @@ import { Building2, Calendar, TrendingUp, Users, Zap } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      company: "Busibud",
-      position: "UI/UX Design Intern",
-      period: "November 2024 - December 2024",
-      location: "Remote",
-      description:
-        "Completed a one-week trial internship where I revamped Chauffeur's live chat software UI, improving usability and visual appeal, leading to a 15% increase in user engagement.",
-      achievements: [
-        {
-          icon: TrendingUp,
-          title: "15% User Engagement Increase",
-          description: "Improved usability and visual appeal of live chat software UI"
-        },
-        {
-          icon: Users,
-          title: "10+ Design Changes Implemented",
-          description: "Collaborated with developers and stakeholders to refine designs"
-        },
-        {
-          icon: Zap,
-          title: "Enhanced User Experience",
-          description: "Applied design thinking principles and usability testing"
-        }
-      ],
-      skills: [
-        "Wireframing & Prototyping",
-        "User Research",
-        "Usability Testing",
-        "Design Systems",
-        "Cross-functional Collaboration"
-      ],
-      tools: ["Figma", "Zulip"]
-    },
-    {
       company: "Omniful",
       position: "Product Design Intern",
       period: "September 2025 – Present",
@@ -71,6 +38,39 @@ const Experience = () => {
         "Collaboration with Product & Engineering Teams"
       ],
       tools: ["Figma", "FigJam"]
+    },
+    {
+      company: "Busibud",
+      position: "UI/UX Design Intern",
+      period: "November 2024 - December 2024",
+      location: "Remote",
+      description:
+        "Completed a one-week trial internship where I revamped Chauffeur's live chat software UI, improving usability and visual appeal, leading to a 15% increase in user engagement.",
+      achievements: [
+        {
+          icon: TrendingUp,
+          title: "15% User Engagement Increase",
+          description: "Improved usability and visual appeal of live chat software UI"
+        },
+        {
+          icon: Users,
+          title: "10+ Design Changes Implemented",
+          description: "Collaborated with developers and stakeholders to refine designs"
+        },
+        {
+          icon: Zap,
+          title: "Enhanced User Experience",
+          description: "Applied design thinking principles and usability testing"
+        }
+      ],
+      skills: [
+        "Wireframing & Prototyping",
+        "User Research",
+        "Usability Testing",
+        "Design Systems",
+        "Cross-functional Collaboration"
+      ],
+      tools: ["Figma", "Zulip"]
     }
   ];
 
