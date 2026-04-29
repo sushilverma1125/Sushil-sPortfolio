@@ -104,7 +104,7 @@ const About = () => {
                 <div className="text-gray-600 dark:text-gray-400">Engagement Increase</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-500 dark:text-orange-400 mb-2">7.76</div>
+                <div className="text-3xl font-bold text-orange-500 dark:text-orange-400 mb-2">8.00</div>
                 <div className="text-gray-600 dark:text-gray-400">Current CGPA</div>
               </div>
             </div>
